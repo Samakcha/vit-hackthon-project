@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #0f172a;
+
+  /* Primary: #2563EB */
+  --primary: #2563EB;
+  --primary-foreground: #ffffff;
+
+  /* Secondary: #0EA5E9 */
+  --secondary: #0EA5E9;
+  --secondary-foreground: #ffffff;
+
+  /* Success: #16A34A */
+  --success: #16A34A;
+  --success-foreground: #ffffff;
+
+  /* Warning: #F59E0B */
+  --warning: #F59E0B;
+  --warning-foreground: #ffffff;
+
+  /* Error: #DC2626 */
+  --error: #DC2626;
+  --error-foreground: #ffffff;
+
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --border: #e2e8f0;
+
+  /* Premium Gradients */
+  --grad-primary: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  --grad-secondary: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  --grad-accent: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+  --grad-surface: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-error: var(--error);
+  --color-error-foreground: var(--error-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+  --animate-slide-up: slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
