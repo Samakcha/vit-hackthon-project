@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+langchain
+langchain-openai
+langchain-google-genai
+python-dotenv
+langchain-community
+langchain-core
+faiss-cpu
+tiktoken
+pypdf
+python-multipart
+requests
+sarvamai
+sarvam
+ffmpeg-python
