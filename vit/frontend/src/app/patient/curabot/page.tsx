@@ -253,7 +253,7 @@ export default function CuraBotPage() {
 
                     <input
                         type="text"
-                        placeholder={isRecording ? "Listening..." : "Ask anything..."}
+                        placeholder={isRecording ? "Listening..." : "Enter your symptoms or medical report..."}
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         onKeyDown={(e) => {

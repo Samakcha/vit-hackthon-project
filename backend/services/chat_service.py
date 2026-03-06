@@ -69,7 +69,10 @@ EMERGENCY_KEYWORDS = [
     "heart attack",
     "suicide",
     "unconscious",
-    "not breathing"
+    "not breathing",
+    "panic attack",
+    "suicidal thoughts",
+    "anxiety"
 ]
 
 def is_emergency(message: str):
