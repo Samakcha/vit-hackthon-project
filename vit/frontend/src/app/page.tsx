@@ -108,19 +108,6 @@ export default function LandingPage() {
                   Learn More
                 </a>
               </div>
-
-              {/* Trust Badges */}
-              <div className="mt-16 flex flex-wrap items-center justify-center gap-8 lg:justify-start">
-                <div className="flex items-center gap-2 text-sm font-bold text-slate-400">
-                  <Shield className="h-5 w-5 text-success" /> HIPAA Compliant
-                </div>
-                <div className="flex items-center gap-2 text-sm font-bold text-slate-400">
-                  <CheckCircle className="h-5 w-5 text-primary" /> Verified Doctors
-                </div>
-                <div className="flex items-center gap-2 text-sm font-bold text-slate-400">
-                  <Users className="h-5 w-5 text-secondary" /> 10k+ Happy Users
-                </div>
-              </div>
             </div>
           </div>
 
